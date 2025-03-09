@@ -1,19 +1,34 @@
 #pragma once
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <thread>
-#include <atomic>
-#include <mutex>
+#include "../../sdk/SDK.h"
+#include "NetworkManager.h"
+#include "PlayerManager.h"
+#include "VehicleManager.h"
+#include "World.h"
 
+namespace CustomMP {
+    class Server {
+    private:
+        NetworkManager* m_NetworkManager;
+        PlayerManager* m_PlayerManager;
+        VehicleManager* m_VehicleManager;
+        World* m_World;
 
-class Player {
-public:
-    int id;
-    std::string name;
-    float x, y, z; // Position
-    float heading;
+        bool m_Running;
 
-    Player(int _id, const std::string& _name);
-};
+    public:
+        Server();
+        ~Server();
+
+        bool Initialize(const std::string& configFile);
+        void Shutdown();
+
+        void Run();
+        void Stop();
+
+        NetworkManager* GetNetworkManager() const { return m_NetworkManager; }
+        PlayerManager* GetPlayerManager() const { return m_PlayerManager; }
+        VehicleManager* GetVehicleManager() const { return m_VehicleManager; }
+        World* GetWorld() const { return m_World; }
+    };
+}

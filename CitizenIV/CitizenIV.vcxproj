@@ -129,7 +129,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main\Main.cpp" />
+    <ClCompile Include="Main\Server\NetworkManager.cpp" />
+    <ClCompile Include="Main\Server\PlayerManager.cpp" />
     <ClCompile Include="Main\Server\Server.cpp" />
+    <ClCompile Include="Main\Server\VehicleManager.cpp" />
+    <ClCompile Include="Main\Server\World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Version\get-version.bat" />
@@ -138,7 +142,11 @@
   <ItemGroup>
     <ClInclude Include="Main\Server\NetworkManager.h" />
     <ClInclude Include="Main\Server\NetworkManager.h.h" />
+    <ClInclude Include="Main\Server\PlayerManager.h" />
     <ClInclude Include="Main\Server\Server.h" />
+    <ClInclude Include="Main\Server\VehicleManager.h" />
+    <ClInclude Include="Main\Server\World.h" />
+    <ClInclude Include="sdk\SDK.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
