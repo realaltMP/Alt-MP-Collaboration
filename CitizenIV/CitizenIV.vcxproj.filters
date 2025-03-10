@@ -33,6 +33,15 @@
     <ClCompile Include="Main\Server\World.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Main\StdInc\StdInc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game Folder\CacheWorkaround.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Components.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main\Server\NetworkManager.h">
@@ -56,11 +65,38 @@
     <ClInclude Include="Main\Server\World.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Diag\DiagLocal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Include\Local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CityCore\LaunchMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CityCore\ReverseGameData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Version\get-version.bat">
       <Filter>Source Files</Filter>
     </None>
     <None Include="Version\get-version.sh" />
+    <None Include="Main\Lua\Premake 1.lua" />
+    <None Include="Components\Component.lua" />
+    <None Include="Components\Component.json" />
+    <None Include="AltMCore\BaseScript.cs" />
+    <None Include="AltMCore\Debug.cs" />
+    <None Include="AltMCore\Attributes.cs" />
+    <None Include="AltMCore\DynFunc.cs" />
+    <None Include="AltMCore\Math" />
+    <None Include="AltMCore\Profiler.cs" />
+    <None Include="AltMCore\Remote.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Components\Component.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

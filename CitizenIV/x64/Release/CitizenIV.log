@@ -1,7 +1,7 @@
-﻿  PlayerManager.cpp
-  World.cpp
+﻿  NetworkManager.cpp
   Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 747 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  2 of 776 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  CitizenIV.vcxproj -> C:\Users\joelh\source\repos\Alt-MP-Collaboration\x64\Release\altmp.exe
+  CitizenIV.vcxproj -> C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\x64\Release\altmp.exe

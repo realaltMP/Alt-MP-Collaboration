@@ -1,0 +1,39 @@
+﻿  Main.cpp
+  NetworkManager.cpp
+  PlayerManager.cpp
+  Server.cpp
+  VehicleManager.cpp
+  World.cpp
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(24,51): error C3083: 'system_clock': the symbol to the left of a '::' must be a type
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(24,65): error C2039: 'now': is not a member of 'std::chrono'
+      D:\Visual Studio 2022 Product\VC\Tools\MSVC\14.43.34808\include\__msvc_chrono.hpp(286,11):
+      see declaration of 'std::chrono'
+  
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(24,65): error C3861: 'now': identifier not found
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(25,33): error C3083: 'system_clock': the symbol to the left of a '::' must be a type
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(25,47): error C2039: 'now': is not a member of 'std::chrono'
+      D:\Visual Studio 2022 Product\VC\Tools\MSVC\14.43.34808\include\__msvc_chrono.hpp(286,11):
+      see declaration of 'std::chrono'
+  
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(25,47): error C3536: 'now': cannot be used before it is initialized
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(25,47): error C2064: term does not evaluate to a function taking 0 arguments
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(26,37): error C2672: 'std::chrono::duration_cast': no matching overloaded function found
+      D:\Visual Studio 2022 Product\VC\Tools\MSVC\14.43.34808\include\__msvc_chrono.hpp(87,19):
+      could be '_To std::chrono::duration_cast(const std::chrono::duration<_Rep,_Period> &) noexcept(<expr>)'
+  
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(28,13): error C3536: 'elapsed': cannot be used before it is initialized
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(49,58): error C3083: 'system_clock': the symbol to the left of a '::' must be a type
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(49,72): error C2039: 'now': is not a member of 'std::chrono'
+      D:\Visual Studio 2022 Product\VC\Tools\MSVC\14.43.34808\include\__msvc_chrono.hpp(286,11):
+      see declaration of 'std::chrono'
+  
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(49,72): error C2064: term does not evaluate to a function taking 0 arguments
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(50,95): error C3536: 'lastWeatherUpdate': cannot be used before it is initialized
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(50,48): error C2672: 'std::chrono::duration_cast': no matching overloaded function found
+      D:\Visual Studio 2022 Product\VC\Tools\MSVC\14.43.34808\include\__msvc_chrono.hpp(87,19):
+      could be '_To std::chrono::duration_cast(const std::chrono::duration<_Rep,_Period> &) noexcept(<expr>)'
+          C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(50,48):
+          '_To std::chrono::duration_cast(const std::chrono::duration<_Rep,_Period> &) noexcept(<expr>)': could not deduce template argument for 'const std::chrono::duration<_Rep,_Period> &' from 'int'
+  
+C:\Users\julan\source\repos\Alt-MP-Collaboration-luastate\CitizenIV\Main\Server\World.cpp(52,17): error C3536: 'weatherElapsed': cannot be used before it is initialized
+  Generating Code...

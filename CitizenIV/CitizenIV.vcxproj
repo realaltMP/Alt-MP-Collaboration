@@ -119,6 +119,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,18 +129,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Components\Components.cpp" />
+    <ClCompile Include="Game Folder\CacheWorkaround.cpp" />
     <ClCompile Include="Main\Main.cpp" />
     <ClCompile Include="Main\Server\NetworkManager.cpp" />
     <ClCompile Include="Main\Server\PlayerManager.cpp" />
     <ClCompile Include="Main\Server\Server.cpp" />
     <ClCompile Include="Main\Server\VehicleManager.cpp" />
     <ClCompile Include="Main\Server\World.cpp" />
+    <ClCompile Include="Main\StdInc\StdInc.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AltMCore\Remote.cs" />
+    <None Include="Components\Component.json" />
+    <None Include="Components\Component.lua" />
+    <None Include="AltMCore\Attributes.cs" />
+    <None Include="AltMCore\BaseScript.cs" />
+    <None Include="AltMCore\Debug.cs" />
+    <None Include="AltMCore\DynFunc.cs" />
+    <None Include="AltMCore\Math" />
+    <None Include="AltMCore\Profiler.cs" />
+    <None Include="Main\Lua\Premake 1.lua" />
     <None Include="Version\get-version.bat" />
     <None Include="Version\get-version.sh" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CityCore\LaunchMode.h" />
+    <ClInclude Include="CityCore\ReverseGameData.h" />
+    <ClInclude Include="Components\Include\Local.h" />
+    <ClInclude Include="Diag\DiagLocal.h" />
     <ClInclude Include="Main\Server\NetworkManager.h" />
     <ClInclude Include="Main\Server\NetworkManager.h.h" />
     <ClInclude Include="Main\Server\PlayerManager.h" />
@@ -147,6 +165,9 @@
     <ClInclude Include="Main\Server\VehicleManager.h" />
     <ClInclude Include="Main\Server\World.h" />
     <ClInclude Include="sdk\SDK.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Components\Component.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

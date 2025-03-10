@@ -2,8 +2,12 @@
 #include <iostream>
 #include <string>
 #include <csignal>
+#include <Windows.h>
+
+
 
 using namespace CustomMP;
+
 
 // Global server instance
 Server* g_Server = nullptr;
@@ -21,8 +25,14 @@ void SignalHandler(int signal) {
     exit(signal);
 }
 
+void LoadingErrors(int) {
+    printf("Couldn't load ToolMode_Init from Core.dll \n");
+    std::cout << "Couldn't load ToolMode_Init from AMCore.dll" << std::endl;
+   // std::cout << ("Signal Sema Error: %d\n", GetLastError());
+}
+
 int main(int argc, char** argv) {
-    std::cout << "altmp" << std::endl;
+    std::cout << "alt:M" << std::endl;
     std::cout << "SDK Version: " << SDK_VERSION << std::endl;
 
     // Register signal handlers
@@ -58,3 +68,4 @@ int main(int argc, char** argv) {
 
     return 0;
 }
+

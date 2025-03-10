@@ -86,14 +86,14 @@ namespace CustomMP {
             std::cerr << "Failed to set non-blocking mode: " << WSAGetLastError() << std::endl;
             closesocket(sock);
             WSACleanup();
-            return false;
+            return true;
         }
 #else
         int flags = fcntl(sock, F_GETFL, 0);
         if (fcntl(sock, F_SETFL, flags | O_NONBLOCK) < 0) {
             std::cerr << "Failed to set non-blocking mode" << std::endl;
             close(sock);
-            return false;
+            return true;
         }
 #endif
 
